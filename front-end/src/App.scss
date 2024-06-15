@@ -1,0 +1,61 @@
+.App {
+  color: #fff;
+  &-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  &-main {
+    padding: 2rem;
+
+    &-toolbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-section {
+      padding-top: 2rem;
+      &-section-title {
+        text-decoration: underline;
+      }
+
+      &-forms {
+        display: flex;
+        height: 50vh;
+        max-height: 50vh;
+        overflow-y: scroll;
+        gap: 1rem;
+        border: 1px solid #fff;
+        border-radius: 5px;
+
+        &-empty {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Scrollbar
+.scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #505251;
+    border-radius: 3px;
+  }
+}
