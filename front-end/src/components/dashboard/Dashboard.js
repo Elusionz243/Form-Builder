@@ -8,9 +8,9 @@ export default function Dashboard() {
   return (
     <div className="Dashboard">
       <div className="App-main-toolbar">
-        <button className="btn btn-primary">
+        <a href="/form-builder" className="btn btn-primary">
           <i class="bi bi-plus-circle" /> Create Form
-        </button>
+        </a>
       </div>
       <section className="App-main-section">
         <h2 className="App-main-section-title">Forms</h2>

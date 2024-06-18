@@ -12,7 +12,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      component: () => (
+      element: (
         <div>
           <Dashboard />
         </div>
@@ -20,7 +20,7 @@ function App() {
     },
     {
       path: "/form-builder",
-      component: () => (
+      element: (
         <div>
           <FormBuilder formData={formBuilderData} />
         </div>
@@ -30,7 +30,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Hazel Sky Form Builder</header>
+      <header className="App-header">
+        <a href="/" className="App-header-title">
+          Hazel Sky Form Builder
+        </a>
+      </header>
       <main className="App-main">
         <RouterProvider router={router} />
       </main>

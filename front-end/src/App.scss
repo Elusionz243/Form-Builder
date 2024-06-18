@@ -5,6 +5,11 @@
     font-size: 2rem;
     padding: 1rem;
     font-weight: bold;
+
+    &-title {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 
   &-main {
