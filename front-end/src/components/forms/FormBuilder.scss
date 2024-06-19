@@ -1,0 +1,23 @@
+.form-builder {
+  display: grid;
+  justify-content: center;
+
+  &-header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  &-fields {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  &-field {
+    display: flex;
+    background-color: #222;
+    gap: 1rem;
+  }
+}
